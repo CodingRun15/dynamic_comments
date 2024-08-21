@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html body{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main{
+  width: 100%;
+  height: 80%;
   display: flex;
-  flex-direction: column;
+}
+.header-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main-comment-section{
+  margin: 5px;
+  min-height: 1678px;
+  min-width: 768px;
+  border-radius: 8px;
+  padding: 4%;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sorting-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .toggle_buttons{
+    padding: 2px;
+    cursor: pointer;
+    background-color: none;
+    color: black;
+    :hover{
+      background-color:none;
+    }
   }
+    .button_active{
+      padding: 2px;
+      cursor: pointer;
+      font-weight: bolder;
+      :hover{
+        background-color:none;
+      }
+    }
+#input-section{
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  .input-field{ 
+   padding: 10px;
+  }
+  .textarea{
+    border: none;
+  }
+}
+.input-footer-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.icons{
+  display: flex;
+  min-width: 100px ;
+  justify-content: space-between;
+  align-items: center;
+}
+.divider{
+  border-bottom: 1px solid grey;
+  margin-left: 20px;
+  margin-right: 20px;
 }
